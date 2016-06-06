@@ -1,4 +1,4 @@
-# generator-neomulik-scss-project [![NPM version]][npm-url]
+# generator-neomulik-scss-project [![NPM version][npm-image]][npm-url]
 > 
 
 ## Installation
