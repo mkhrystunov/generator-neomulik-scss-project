@@ -13,7 +13,7 @@ npm install -g generator-neomulik-scss-project
 Then generate your new project:
 
 ```bash
-yo hope
+yo neomulik-scss-project
 ```
 
 ## Getting To Know Yeoman
