@@ -1,4 +1,4 @@
-# generator-neomulik-scss-project [![NPM version][npm-image]][npm-url]
+# generator-neomulik-scss-project [![NPM version]][npm-url]
 > 
 
 ## Installation
@@ -27,12 +27,4 @@ yo neomulik-scss-project
 
 MIT © [Andriy Mulyk](neomulik@hotmail.com)
 
-
-[npm-image]: https://badge.fury.io/js/generator-hope.svg
-[npm-url]: https://npmjs.org/package/generator-hope
-[travis-image]: https://travis-ci.org//generator-hope.svg?branch=master
-[travis-url]: https://travis-ci.org//generator-hope
-[daviddm-image]: https://david-dm.org//generator-hope.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org//generator-hope
-[coveralls-image]: https://coveralls.io/repos//generator-hope/badge.svg
-[coveralls-url]: https://coveralls.io/r//generator-hope
+[npm-url]: https://www.npmjs.com/package/generator-neomulik-scss-project
