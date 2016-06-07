@@ -1,6 +1,6 @@
 {
   "name": "generator-neomulik-scss-project",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A small yeoman generator for generation a new SCSS project.",
   "main": "index.js",
   "scripts": {
