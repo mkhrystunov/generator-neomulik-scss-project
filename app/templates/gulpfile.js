@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
 var autoPrefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
@@ -10,8 +10,8 @@ var imageMin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 
 gulp.task('sass', function() {
-    return sass('src/components/main.scss', { sourcemap: true, style: 'compact' })
-        .on('error', sass.logError)
+    return gulp.src('src/components/main.scss')
+        .pipe(sass({ sourcemap: true, style: 'compact' }).on('error', sass.logError))
         .pipe(sourceMaps.init({loadMaps: true}))
         .pipe(autoPrefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
         .pipe(rename('app.css'))
@@ -31,7 +31,8 @@ gulp.task('fonts', function(){
 });
 
 gulp.task('images', function(){
-    return gulp.src('src/theme/images/*/*')
+    return gulp.src('src/theme/images/*')
+        .pipe(imageMin())
         .pipe(gulp.dest('dist/images/'))
 });
 
